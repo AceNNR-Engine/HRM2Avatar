@@ -241,23 +241,43 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">High-Fidelity Real-Time Mobile Avatars from Monocular Phone Scans</h1>
+            <h1 class="title is-1 publication-title">HRM<sup>2</sup>Avatar: High-Fidelity Real-Time Mobile Avatars from Monocular Phone Scans</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+                <a target="_blank">Chao Shi</a><sup>1*</sup>,
+              </span>
+              <span class="author-block">
+                <a target="_blank">Shenghao Jia</a><sup>1,2*</sup>,
+              </span>
+              <span class="author-block">
+                <a target="_blank">Jinhui Liu</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a target="_blank">Yong Zhang</a><sup>1&dagger;</sup>,
+              </span>
+              <span class="author-block">
+                <a target="_blank">Liangchao Zhu</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a target="_blank">Zhonglei Yang</a><sup>1&Dagger;</sup>,
+              </span>
+              <span class="author-block">
+                <a target="_blank">Jinze Ma</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a target="_blank">Chaoyue Niu</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a target="_blank">Chengfei Lv</a><sup>1&dagger;</sup>
+              </span>
+            </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
+                    <span class="author-block"><sup>1</sup>Alibaba Group, <sup>2</sup>Shanghai Jiao Tong University<br>SIGGRAPH Asia 2025</span>
                     <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution, <sup>&dagger;</sup>Corresponding Author, <sup>&Dagger;</sup>Project Leader</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -325,7 +345,7 @@
       </video>
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        We present HRM2Avatar, a novel framework for creating high-fidelity avatars from monocular phone scans, which can be rendered and animated in real-time on mobile devices.
       </h2>
     </div>
   </div>
@@ -341,7 +361,16 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            We present HRM<sup>2</sup>Avatar, a novel framework for creating high-fidelity avatars from monocular phone scans, which can be rendered and animated in real-time on mobile devices.
+Monocular capture with commodity smartphones provides a low-cost, pervasive alternative to studio-grade multi-camera rigs, making avatar digitization accessible to non-expert users.
+Reconstructing high-fidelity avatars from single-view video sequences poses significant challenges due to deficient visual and geometric data relative to multi-camera setups.
+To address these limitations, at the data level, our method leverages two types of data captured with smartphones: static pose sequences for detailed texture reconstruction and dynamic motion sequences for learning pose-dependent deformations and lighting changes.
+At the representation level, we employ a lightweight yet expressive representation to reconstruct high-fidelity digital humans from sparse monocular data. 
+First, we extract explicit garment meshes from monocular data to model clothing deformations more effectively. 
+Second, we attach illumination-aware Gaussians to the mesh surface, enabling high-fidelity rendering and capturing pose-dependent lighting changes.
+This representation efficiently learns high-resolution and dynamic information from our tailored monocular data, enabling the creation of detailed avatars.
+At the rendering level, real-time performance is critical for rendering and animating high-fidelity avatars in AR/VR, social gaming, and on-device creation, demanding sub-frame responsiveness. Our fully GPU-driven rendering pipeline delivers 120 FPS on mobile devices and 90 FPS on standalone VR devices at 2K resolution, over 2.7&times; faster than representative mobile-engine baselines.
+Experiments show that HRM<sup>2</sup>Avatar delivers superior visual realism and real-time interactivity at high resolutions, outperforming state-of-the-art monocular methods.
           </p>
         </div>
       </div>
