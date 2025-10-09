@@ -339,13 +339,17 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata"> -->
         <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
+        <!-- <source src="static/videos/banner_video.mp4" type="video/mp4">
+      </video> -->
+      <img src="static/images/teaser.jpg" alt="teaser figure" loading="lazy"/>
+
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        We present HRM2Avatar, a novel framework for creating high-fidelity avatars from monocular phone scans, which can be rendered and animated in real-time on mobile devices.
+        Our method creates high-fidelity avatars with realistic clothing dynamics by monocular smartphone scanning,
+  and achieves 2048&times;945@120FPS on iPhone 15 Pro Max and 1920&times;1824x2@90FPS on Apple Vision Pro with 533,695 splats. 
+  Each subject's data is captured using a single iPhone for 5 minutes.
       </h2>
     </div>
   </div>
@@ -354,6 +358,7 @@
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
+<!-- <section class="section hero is-white"> -->
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -380,51 +385,46 @@ Experiments show that HRM<sup>2</sup>Avatar delivers superior visual realism and
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
+<!-- Method overview -->
+<section class="hero teaser is-white">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <!-- 新增 Abstract 标题 -->
+      <h2 class="title is-3" style="margin-top:1.5rem;">Method Overview</h2>
+
+      <img src="static/images/overview.png" alt="teaser figure" loading="lazy"/>
+
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Given the two-stage phone scans of a subject, we construct a clothed mesh-driven Gaussian avatar. 
+        Static, texture-rich images impose stringent supervision on Gaussian attributes 𝗴 , while dynamic, 
+        motion-intensive sequences prioritize optimization of deformation &#x0394;<b>V</b><sup><b>d</b></sup> and illumination <em>L</em>. 
+        Through deformation MLP, illumination MLP and GPU-driven Gaussian rendering pipeline, real-time rendering and 
+        animation of realistic avatars is achievable on mobile devices.
       </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End Method overview -->
 
 
+<!-- Method overview -->
+<section class="hero teaser is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <!-- 新增 Abstract 标题 -->
+      <h2 class="title is-3" style="margin-top:1.5rem;">Comparisons</h2>
 
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <!-- TODO: Add your video file path here -->
+        <source src="static/videos/comparison.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+<!-- End Method overview -->
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<section class="hero is-small is-white">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
@@ -444,79 +444,30 @@ Experiments show that HRM<sup>2</sup>Avatar delivers superior visual realism and
 <!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
+<<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <div class="bibtex-header">
+      <h2 class="title">BibTeX</h2>
+      <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+        <i class="fas fa-copy"></i>
+        <span class="copy-text">Copy</span>
+      </button>
     </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+    <pre id="bibtex-code"><code>@inproceedings{shi2025hrm2avatar,
+  author = {Shi, Chao and Jia, Shenghao and Liu, Jinhui and Zhang, Yong and Zhu, Liangchao and Yang, Zhonglei and Ma, Jinze and Niu, Chaoyue and Lv, Chengfei},
+  title     = {{HRM}$^2${Avatar}: High-Fidelity Real-Time Mobile Avatars from Monocular Phone Scans},
+  booktitle = {SIGGRAPH Asia 2025 Conference Papers (SA Conference Papers '25)},
+  year      = {2025},
+  address   = {Hong Kong, Hong Kong},
+  month     = dec,
+  publisher = {Association for Computing Machinery},
+  location  = {New York, NY, USA},
+  numpages  = {12},
+  doi       = {10.1145/3757377.3763894},
+  url       = {https://doi.org/10.1145/3757377.3763894}
 }</code></pre>
-    </div>
+  </div>
 </section>
 <!--End BibTex citation -->
 
