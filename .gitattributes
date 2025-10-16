@@ -1,2 +1,0 @@
-static/videos/comparison.mp4 filter=lfs diff=lfs merge=lfs -text
-static/videos/PaperVideo_FInal.mp4 filter=lfs diff=lfs merge=lfs -text
